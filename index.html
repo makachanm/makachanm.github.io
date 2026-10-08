@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>양현성 (Hyeonseong Yang)</title>
+  <meta name="description" content="양현성 (Hyeonseong Yang)의 프로필">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #222222;
+      --muted: #707070;
+      --rule: #e5e5e5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #161616;
+        --text: #e2e2e2;
+        --muted: #8f8f8f;
+        --rule: #2c2c2c;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo",
+                   "Noto Sans KR", "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 72px 20px 96px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+    .en {
+      margin: 2px 0 0;
+      font-size: 1.05rem;
+    }
+    .affil {
+      margin: 6px 0 0;
+      color: var(--muted);
+    }
+    h2 {
+      margin: 48px 0 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--rule);
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    ul { margin: 0; padding: 0; list-style: none; }
+    li { margin: 0 0 0.9em; word-break: keep-all; }
+    li:last-child { margin-bottom: 0; }
+    .meta { color: var(--muted); }
+    .date { color: var(--muted); white-space: nowrap; }
+    .row {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .pub-title { font-weight: 600; }
+    .pub-en, .pub-authors, .pub-venue { display: block; }
+    .pub-en { color: var(--muted); }
+    .pub-venue { color: var(--muted); font-style: italic; }
+    .links li { margin-bottom: 0.3em; }
+    a {
+      color: inherit;
+      text-decoration: underline;
+      text-decoration-color: var(--muted);
+      text-underline-offset: 3px;
+    }
+    a:hover { text-decoration-color: currentColor; }
+    @media (max-width: 480px) {
+      body { font-size: 16px; }
+      main { padding-top: 48px; }
+      .row { flex-direction: column; gap: 0; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>양현성</h1>
+    <p class="en">Hyeonseong Yang</p>
+
+    <h2>Education</h2>
+    <ul>
+      <!-- 최근 학력이 위로 오게 -->
+      <li>
+        <div class="row">
+          <span>B.S. in Computer Science and Artificial Intelligence, Jeonbuk National University</span>
+          <span class="date">Mar 2024 – Present</span>
+        </div>
+      </li>
+    </ul>
+
+    <h2>Publications</h2>
+    <ul>
+      <!-- 논문 하나당 <li> 하나. 본인 이름은 <strong>으로 감싸기 -->
+      <li>
+        <span class="pub-title">Native Stack 기반 웹어셈블리 인터프리터에서의 Tail Call Optimization 설계 및 구현</span>
+        <span class="pub-en">An Implementation of Tail Call Optimization in a Native Stack Based WebAssembly Interpreter</span>
+        <span class="pub-authors"><strong>양현성</strong>, 박혁우</span>
+        <span class="pub-venue">제53회 한국컴퓨터종합학술대회(KCC 2026) 논문집, 2026</span>
+      </li>
+      <li class="meta">+ 2 papers under double-blind review (details to be added upon decision)</li>
+    </ul>
+
+    <h2>Links</h2>
+    <ul class="links">
+      <li>Email: <a href="mailto:administrator@jbnu.ac.kr">administrator@jbnu.ac.kr</a></li>
+      <li>GitHub: <a href="https://github.com/makachanm">github.com/makachanm</a></li>
+      <!-- <li>Google Scholar: <a href="https://scholar.google.com/citations?user=ID">Google Scholar</a></li> -->
+      <li>ORCID: <a href="https://orcid.org/0009-0000-9873-5600">0009-0000-9873-5600</a></li>
+    </ul>
+  </main>
+</body>
+</html>
